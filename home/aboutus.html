@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>About Us</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="" />
+  <script src=""></script>
+  
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css2/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css2/style.css"> <!-- Resource style -->
+	<script src="js2/modernizr.js"></script> <!-- Modernizr -->
+  <style>
+  				.cd-stretchy-nav .stretchy-nav-bg {
+  /* this is the stretching navigation background */
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #337AB7;
+ /* background:red;*/
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: height 0.2s, box-shadow 0.2s;
+  -moz-transition: height 0.2s, box-shadow 0.2s;
+  transition: height 0.2s, box-shadow 0.2s;
+}
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.thumb {
+    width: 300px;
+    height: 350px;
+    margin: 70px auto;
+    perspective: 1000px;
+  text-align:center;
+}
+a
+{
+  position:absolute;
+  top:0;
+  
+}
+.thumb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-size: 0, cover;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+
+.thumb:hover a {
+    transform: rotateX(80deg);
+    transform-origin: bottom;
+}
+.thumb a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 36px;
+    background: inherit;
+    background-size: cover, cover;
+    background-position: bottom;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+.thumb a span {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    font: bold 12px/36px "Open Sans";
+    text-align: center;
+    transform: rotateX(-89.99deg);
+    transform-origin: top;
+    z-index: 1;
+}
+.thumb a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    opacity: 0.15;
+    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+    transform-origin: bottom;
+}
+
+.thumb:hover a:before {
+    opacity: 1;
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+    transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+#photo
+{
+text-align:center;
+font-size:30px;
+}
+
+  .modal_bg{
+			width:100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			display: none;
+			background-color: rgba(00,00,00,0.7);
+			z-index: 14;
+		}
+    @media only screen and (min-width: 993px) {
+      .container {
+          width: 100%;
+          font-size: 25px;
+      }
+      .flow-text {
+        font-size: 1.3rem;
+      }
+      .thumb
+      {
+          width:300px;
+          height:350px;
+      }
+    }
+  </style>
+</head>
+<body style="background-color:black;color:white">
+	<header>
+	<div class="modal_bg"></div>
+	<nav class="cd-stretchy-nav">
+		<a class="cd-nav-trigger" href="#0">
+			<span aria-hidden="true"></span>
+		</a>
+
+		<ul>
+			<li><a href="../home" ><span>Home</span></a></li>
+			<li><a href="worshop.html"><span>Workshop</span></a></li>
+			<li><a href="events.html"><span>Events</span></a></li>
+			<li><a href="http://goforevent.com/jntua_pixel18/" target="_blank"><span>Register Here</span></a></li>
+			<li><a href="contact.html" ><span>Contact</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+</header>
+  <div class="container">
+  <div class="row">
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  p{font-size:22px;}
+  </style>
+</head>
+<body>
+
+<div class="container">
+<br><br>
+   <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Department</a></li>
+    <li><a data-toggle="pill" href="#menu1">Pixel</a></li>
+    <li><a data-toggle="pill" href="#menu2">College</a></li>
+  </ul>
+  <br>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      
+     <p  >
+         &emsp;&emsp;&emsp;&emsp;The Department of Computer Science and Engineering has started offering B.Tech programme since 1989 with an intake of 15
+        students. The present intake for the Bachelor’s course is 60 and is accredited by NBA. For the last two decades the department
+        has an enormous growth in student strength, infrastructure facilities number of courses being offered. Currently, the department
+        is offering B.Tech, M.C.A, and three M.Tech programmes. M.C.A was started in the year 1996 with an intake of 30 and now it
+        has been increased to 60. M.Tech in Computer Science was started in 2000, M.Tech in Software Engineering in 2001 and M.Tech
+        in Artificial Intelligence in 2011. The intake to all these programmes is 25. The department is also having state of the
+        art facilities for carrying out research Department is equipped with three laboratories, one lab is dedicated for B.Tech
+        students, one for Master’s programmes, and one lab for the research to carry out their research.<br><br>&emsp;&emsp;&emsp;&emsp;The research lab is unique
+        in the department with Sun Solaris systems and a high end server. Apart from this, The department maintains a Central Computing
+        Center(CCC) with over 200 systems where, The 1st year students of all the branches are accessing Computing facilities within
+        and beyond working hours. The entire campus is networked with 1 Gbps internet connectivity so as to enable the students to
+        browse the internet. The department also possesses a library with over 1300 text books, 10 journals and around 45 e-learning
+        resources. The department possesses two sponsored projects. <br/>UGC-MRP – Cloud Computing framework for rural health care in
+        Indian scenario. <br/>AICTE-RPS – Secure and Usable Authentication to Common People in Secure Systems.
+      </p>   
+<div class="thumb" >
+	  <a ><img src="Images/vasu.jpg" height="280px" width="300px" ></img>
+	  </a>
+	  <div id="photo">Prof.S.Vasundhara<br><p style="font-size:20px;">Head of the Department</p></div>
+</div>
+
+</div>
+    <div id="menu1" class="tab-pane fade">
+         <p >
+         &emsp;&emsp;&emsp;&emsp; Pixel is a National Level Technical Symposium for undergrads and postgrads organised by Department of Computer Science and
+        Engineering, JNTUA College of Engineering, Ananthapuramu. Since its inception in 2005, Pixel has been innovating itself at
+        each and every edition and now we are very proud to say that we are at the tenth one. The Symposium serves as a platform
+        in tapping the immense potential, and unleashing the genius of students across the country by which unparalleled communication
+        skills and public speaking comes to them with ease. The fest is a high profile event which will lure the students from all
+        the colleges in and around the state to unleash and showcase their all-round expertise by competing emulously on a large
+        scale that paves a way for all-round development of a budding professional.
+		<div class="row">
+		<div class="col-md-1">
+</div>
+		<div class=" col-md-4 thumb">
+	  <a href="#">
+		   <img src="Images/shiv.jpg" height="280px" width="300px"></img>
+	  </a>
+	 <div id="photo">Dr.A.P.Shiva Kumar<br><p style="font-size:20px;">PIXEL co-ordinator</p></div> 
+</div>
+<div class="col-md-2">
+</div>
+<div class="col-md-4 thumb">
+	  <a href="#">
+		     <img src="Images/bharathi.jpg" height="280px" width="300px"></img>
+	  </a>
+	  <div id="photo">Dr. K. F. Bharathi<br><p style="font-size:20px;">PIXEL co-ordinator</p></div>
+</div>
+<div class="col-md-1">
+</div>
+</div>
+
+</div>
+      </p> 
+    <div id="menu2" class="tab-pane fade">
+      <p >
+         &emsp;&emsp;&emsp;&emsp; JNTUA College of Engineering, Ananthapuramu stands aloft on a solid foundation of past glory and prestige. This college
+        was started in the year 1946, under the post war reconstruction program and functioned at Guindy campus, Madras for two years
+        and was shifted to Ananthapuramu in 1948. It was in the year 1958 that the college was shifted to the present permanent buildings
+        accommodating the Administrative block, Laboratories, the Engineering Departments, Library and the Hostel blocks. During
+        the first 25 years of its existence, it was affiliated to the Madras and S V University and produced distinguished alumni,
+        who are holding high positions, in India and abroad. It has great tradition to be proud of. Fortified with traditional values
+        and dedicated spirit of the staff and the students, it would rise up to any occasion or meet any challenge confidently.
+        <br/>
+        <br/> &emsp;&emsp;&emsp;&emsp;The college became a constituent college of the formed Jawaharlal Nehru Technological University, Hyderabad in 1972 and presently
+        it is a constituent college of newly formed JNT University Anantapur, Ananthapuramu since August 2008. This college has vast
+        campus sprawling over an area of 185 acres, in a peaceful atmosphere, away from the dust and din of the town. With this a
+        new era was ushered in Technical Education. Consequently there was an impetus to the academic activity of this college. Though
+        the College was initially established to provide basic technical education, with the passage of time, it emerged out, as
+        one of the colleges to fulfill the technical need of our fast developing India with highly professional and well trained
+        graduates.
+      </p> </div>
+   
+  </div>
+</div>  
+<script src="js2/jquery-2.1.4.js"></script>
+<script src="js2/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

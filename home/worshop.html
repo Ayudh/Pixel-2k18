@@ -1,0 +1,297 @@
+<title>Pixel-Workshop</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<meta name="description" content="Pixel-Workshop on machine learning" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css2/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css2/style.css"> <!-- Resource style -->
+	<script src="js2/modernizr.js"></script> <!-- Modernizr -->
+	<link href="https://fonts.googleapis.com/css?family=Cherry+Swash" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+<style>
+#session
+{
+position:relative;
+left:220px;
+}
+
+#benifits,#rules
+{
+font-family:'Cherry Swash';
+margin:30px;
+font-size:25px;
+}
+#benifits ul,#rules ul
+{
+font-family:'Cherry Swash';
+}
+.modal_bg{
+			width:100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			display: none;
+			background-color: rgba(00,00,00,0.7);
+			z-index: 14;
+		}
+						.cd-stretchy-nav .stretchy-nav-bg {
+  /* this is the stretching navigation background */
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: linear-gradient(to right, rgba(255,0,0,0), #531A53);;
+ /* background:red;*/
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: height 0.2s, box-shadow 0.2s;
+  -moz-transition: height 0.2s, box-shadow 0.2s;
+  transition: height 0.2s, box-shadow 0.2s;
+}
+  .container-fluid {
+    /* padding: 0%; */
+  }
+  #rules ul li:before,#benifits ul li:before {
+  content: "\f058"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+  body
+  {
+  background-image:url('./Images/w5.jpg');
+  background-repeat:no-repeat;
+  color:white;
+  background-size:cover;
+  margin-top:30px;
+  overflow:hidden;
+  line-height:25px;
+font-family: 'Expletus Sans';
+  }
+  img {
+    /* border-radius: 100%; */
+    padding: 0%;
+    margin: 0%;
+    height: 320px;
+    width: 500px;
+    left:-200px;
+  }
+  #submit
+  {
+  font-size:18px;
+  border-radius:20px;
+  background-color:transparent;
+  position:relative;
+  top:25px;
+  left:450px;
+  }
+  #main
+  {
+  position:relative;
+  top:50px;
+  left:30px;
+  }
+  #main h1
+  {
+  margin:15px;
+  font-size:22px;
+  }
+  #rules ul li,#benifits ul li
+  {
+  font-size:20px;
+  margin:20px;
+  }
+ 
+  #home
+  {
+  display:none;
+  }
+  b
+  {
+  font-weight:bold;
+  }
+  #call
+{
+height:20px;
+width:20px;
+}
+  #bottom
+  {
+  position:relative;
+    padding: 0%;
+    margin: 0%;
+	top:-180px;
+	left:620px;
+    height: 250px;
+    width: 250px;
+	  background-color: transparent;
+  }
+  @media only screen and (max-width:990px) {
+  #reg{
+     line-height: 100px;
+     font-size: 50px;	 
+  }
+  h6{
+font-size:35px;
+margin-bottom:30px;
+}
+    #bottom
+  {
+  position:relative;
+    padding: 0%;
+    margin: 0%;
+	top:-220px;
+	left:700px;
+    height: 350px;
+    width: 300px;
+	  background-color: transparent;
+  }
+   #submit
+  {
+  width:350px;
+  height:80px;
+  font-size:45px;
+  border-radius:20px;
+  background-color:transparent;
+  position:relative;
+  top:25px;
+  left:300px;
+  margin-top:10%;
+  }
+  #benifits,#rules
+{
+font-family:'Cherry Swash';
+margin-left:50px;
+font-size:60px;
+margin-bottom:100px;
+}
+h2
+{
+margin:50px;
+}
+     header
+	 {
+	 display:none;
+	 }
+	 #home
+	 {
+	 display:block;
+	 }
+	 #home
+	 {
+	 margin-top:100px;
+	 margin-left:50px;
+	 width:250px;
+	 height:80px;
+	 background-color:transparent;
+	 border-radius:20px;
+	 }
+	 #show
+	 {
+	position:relative;
+		left:200px;
+	 }
+	 #main 
+	 {
+	 position:relative;
+	 left:110px;
+	 margin:2%;
+	 margin-bottom:20%;
+	 }
+	 #main h1
+	 {
+	 font-size:45px;
+	 line-height:80px;
+	 }
+	body
+	{
+	font-size:50px;
+	overflow:auto;
+	margin:2%;
+	background-repeat:repeat;
+	}
+	  #rules ul li,#benifits ul li
+  {
+  font-size:50px;
+  margin:20px;
+  line-height:80px;
+  }
+  p
+  {
+  line-height:70px;
+  }
+  
+    #call
+{
+height:40px;
+width:40px;
+}
+  }
+  
+</style>
+<body >
+	<header>
+	<div class="modal_bg"></div>
+	<nav class="cd-stretchy-nav">
+		<a class="cd-nav-trigger" href="#0">
+			<span aria-hidden="true"></span>
+		</a>
+	<ul>
+			<li><a href="../home" ><span>Home</span></a></li>
+			<li><a href="worshop.html" class="active"><span>Workshop</span></a></li>
+			<li><a href="events.html"><span>Events</span></a></li>
+			<li><a href="http://goforevent.com/jntua_pixel18/" target="_blank"><span>Register Here</span></a></li>
+			<li><a href="contact.html"><span>Contact</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+</header>
+  <button id="home" ><a href="../home" style="color:white"> Home</a></button>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-4 mc">
+        <img id="show" src="./Images/ml.png" alt="">
+		<div id="main">
+        <h1> by SPM HYDROLUS COMPANY, Pune. </h1>
+		<!--<h1 ><b>Instructor:</b> Snr. Industrialist Akshay. </h1><br>-->
+<h6>For any Queries:</h6>
+<p>Tharun Raj:&emsp;&emsp;&emsp;<img id="call" src="./Images/phone.png">&nbsp;+91-9052688656<br/>Latha prasanna:&emsp;<img id="call" src="./Images/phone.png">&nbsp;+91-9502604895</p>
+</div>
+      </div>
+      <div class="col-md-8 mcdata" style="height:100%;">
+<div id="benifits">
+<h2>Benefits:</h2>
+<ul type="">
+<li>One can acquire the knowledge of machine learning and it's applications both theoretically and practically.</li>
+<li>Those who register for workshop will get participation certificate.</li>
+<li>In the end of second day, the trainers will conduct the competition in which top scorers will get the merit certificate and also internship in their particular domains. Those who perform well in the internship will have an oppurtunity to get recruited by MNC's.
+</li>
+</ul>
+</div>
+<div id="rules">
+<h2>Rules:</h2>
+<ul>
+<li>
+	It is mandatory that all the students report at the counter with their ID cards. No group registrations are allowed. Every one should bring a Laptop with WiFi Compatiblity</li>
+<li>	Last date for online payment is March 19,2018.</li>
+</ul>
+     <h2 id="reg">Registration Fee: Rs 800 for two days (4 sessions) <br/><br/>On 23<sup>rd</sup>,24<sup>th</sup> march.</h2>
+<button id="submit" ><a href="http://goforevent.com/jntua_pixel18" target="_blank" style="color:white">Register Here</a></button>
+<br><br><img  id="bottom" src="./Images/HT1.png" alt="">
+ </div>
+ </div>
+    </div>
+  </div>
+  
+<script src="js2/jquery-2.1.4.js"></script>
+<script src="js2/main.js"></script> <!-- Resource jQuery -->
+</body>

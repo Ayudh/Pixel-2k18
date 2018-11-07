@@ -1,0 +1,461 @@
+<head>
+<title>Pixel-Events</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<meta name="description" content="Pixel technical and non technical events" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="hover-min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css2/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css2/style.css"> <!-- Resource style -->
+	<script src="js2/modernizr.js"></script> <!-- Modernizr -->
+<script>
+	window.onload = function () {
+    if (typeof history.pushState === "function") {
+        history.pushState("jibberish", null, null);
+        window.onpopstate = function () {
+            history.pushState('newjibberish', null, null);
+			location.href="../home";
+            // Handle the back (or forward) buttons here
+            // Will NOT handle refresh, use onbeforeunload for this.
+        };
+    }
+    else {
+        var ignoreHashChange = true;
+        window.onhashchange = function () {
+            if (!ignoreHashChange) {
+                ignoreHashChange = true;
+                window.location.hash = Math.random();
+                // Detect and redirect change here
+                // Works in older FF and IE9
+                // * it does mess with your hash symbol (anchor?) pound sign
+                // delimiter on the end of the URL
+            }
+            else {
+                ignoreHashChange = false;   
+            }
+        };
+    }
+}
+  function show(x) {
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+	var ifr=document.getElementById('visi');
+    switch (x) {
+      case 1:
+	  document.body.style.backgroundImage = "url('./Images/coding.png')";
+        //document.getElementById('visi').src = "coding.html";
+		ifr.contentWindow.location.replace("coding.html");
+        break;
+      case 2:
+	   document.body.style.backgroundImage = "url('./Images/bug.png')";
+        //document.getElementById('visi').src = "bug.html";
+		ifr.contentWindow.location.replace("bug.html");
+        break;
+      case 3:
+	  document.body.style.backgroundImage = "url('./Images/treasurehunt.jpg')";
+        //document.getElementById('visi').src = "treasure.html";
+		ifr.contentWindow.location.replace("treasure.html");
+        break;
+      case 4:
+	  document.body.style.backgroundImage = "url('./Images/game.jpg')";
+        //document.getElementById('visi').src = "gaming.html";
+        ifr.contentWindow.location.replace("gaming.html");
+		break;
+      case 5:
+	   document.body.style.backgroundImage = "url('./Images/dancing.jpg')";
+	   document.body.style.backgroundColor.opacity="0.1";
+       // document.getElementById('visi').src = "natyak.html";
+	   ifr.contentWindow.location.replace("natyak.html");
+        break;
+      case 6:
+       document.body.style.backgroundImage = "url('./Images/candid.jpg')";
+        //document.getElementById('visi').src = "candid.html";
+		ifr.contentWindow.location.replace("candid.html");
+        break;
+      case 7:
+	  document.body.style.backgroundImage = "url('./Images/ppt.jpg')";
+        //document.getElementById('visi').src = "paper.html";
+		ifr.contentWindow.location.replace("paper.html");
+        break;
+      case 8:
+	  document.body.style.backgroundImage = "url('./Images/projectexpo1.jpg')";
+       // document.getElementById('visi').src = "projectexpo.html";
+	   ifr.contentWindow.location.replace("projectexpo.html");
+        break;
+      case 9:
+	   document.body.style.backgroundImage = "url('./Images/shortfilm.jpg')";
+       // document.getElementById('visi').src = "minicinemaa.html";
+	   ifr.contentWindow.location.replace("minicinemaa.html");
+        break;
+      case 10:
+	   document.body.style.backgroundImage = "url('./Images/quiz.jpg')";
+        //document.getElementById('visi').src = "quiz.html";
+		ifr.contentWindow.location.replace("quiz.html");
+        break;
+
+    }
+
+  }
+</script>
+<style>
+.modal_bg{
+			width:100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			display: none;
+			background-color: rgba(00,00,00,0.7);
+			z-index: 14;
+		}
+ 
+.cd-stretchy-nav {
+	right:15%;
+	top:10%;
+}
+  .right-button {
+			position: absolute;
+			top: -390px;
+			right: 20px;
+			z-index: 1;
+		}
+
+		.right-bottom {
+			position: absolute;
+			top: -140px;
+			right: 5px;
+			z-index: 1;
+		}
+
+		.right-bottom2 {
+			position: absolute;
+			top: -270px;
+			right: 20px;
+			z-index: 1;
+		}
+
+		.right-top {
+			position: absolute;
+			top: -630px;
+			right: 20px;
+			z-index: 1;
+		}
+
+		.right-top2 {
+			position: absolute;
+			top: -515px;
+			right: 20px;
+			z-index: 1;
+		}
+
+		.left-button {
+			position: absolute;
+			top: -390px;
+			left: 20px;
+			z-index: 1;
+		}
+        
+		.left-bottom {
+			position: absolute;
+			top: -140px;
+			left: 20px;
+			z-index: 1;
+		}
+
+		.left-bottom2 {
+			position: absolute;
+			top: -270px;
+			left: 20px;
+			z-index: 1;
+		}
+
+		.left-top {
+			position: absolute;
+			top: -630px;
+			left: 20px;
+			z-index: 1;
+		}
+
+		.left-top2 {
+			position: absolute;
+			top: -515px;
+			left: 20px;
+			z-index: 1;
+		}
+
+		button {
+			border-radius: 50%;
+			border-color: transparent;
+			background-color: transparent;
+			border: none;
+			outline: none;
+		}
+
+		img {
+			border-radius: 50%;
+			border-color: black;
+		}
+
+		body {
+			background-color: black;
+		}
+
+		img {
+			height: 100px;
+			width: 100px;
+		}
+
+		.back {
+			height: 100px;
+			width: 100px;
+		}
+
+		.backhide {
+			position: absolute;
+			top: -650px;
+			left: 20px;
+		}
+								.cd-stretchy-nav .stretchy-nav-bg {
+  /* this is the stretching navigation background */
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: linear-gradient(to right, rgba(255,0,0,0), #EF787C);;
+ /* background:red;*/
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: height 0.2s, box-shadow 0.2s;
+  -moz-transition: height 0.2s, box-shadow 0.2s;
+  transition: height 0.2s, box-shadow 0.2s;
+}
+		#visi {
+			margin-top: 20px;
+			height: 96%;
+			width: 78%;
+			/* overflow: hidden; */
+			background-color: transparent;
+			margin-left: 11%;
+			border-color: transparent;
+			box-shadow: 0 0 20px grey;
+		}
+    #eventdiv {
+      display: none;
+    }
+    .container-fluid {
+      color: white;
+    }
+	#home
+	{
+	display:none;
+	}
+	#register2
+		 {
+		 width:150px;
+		 height:50px;
+		 border-radius:20px;
+		 position:absolute;
+		 z-index:320;
+		 right:200px;
+		 bottom:50px;
+		  background: linear-gradient(to right, rgba(255,0,0,0), #EF787C);
+		 border-color:red;
+		 opacity:0.9;
+		 }
+  @media only screen and (max-width:980px) {
+    .cd-stretchy-nav {
+	right:15%;
+	top:10%;
+  }
+  body
+  {
+  background-color:black;
+  }
+  #home a
+  {
+  text-decoration:none;
+  color:white;
+  }
+     header
+	{
+	display:none;
+	}
+	#home
+	{
+	display:block;
+    position:absolute;
+	right:50px;
+	top:350px;
+	background: linear-gradient(to right, rgba(255,0,0,0), #EF787C);
+	color:white;
+	width:200px;
+	font-size:30px;
+	height:90px;
+	border-radius:20px;
+	opacity:0.9;
+	}
+    .container-fluid {
+      display: none;
+    }
+    #eventdiv {
+      display: inline;
+    }
+    #visi {
+			margin-top: 20px;
+			height: 100%;
+			width: 100%;
+      display: block;
+			/* overflow: hidden; */
+			/* background-color: red; */
+			/* margin-left: 11%; */
+			border-color: transparent;
+      margin-left: 0;
+      /* box-shadow: transparent; */
+			box-shadow: 0 0 0 grey;
+		}
+    .eventheader {
+      width: 100%;
+      background-color: transparent;
+      overflow: auto;
+      white-space: nowrap;
+      font-size: 40px;
+      color: white;
+    }
+    button {
+      background-color: transparent;
+      border: transparent;
+      outline: none;
+    }
+    #eventdiv {
+      height:100%;
+      background-color: transparent;
+      width: 98%;
+      box-sizing: border-box;
+    }
+  body {
+    background-color: transparent;
+    /* box-sizing: border-box; */
+  }
+  img {
+			height: 250px;
+			width: 250px;
+		}
+		#register2
+	{
+	display:block;
+    position:absolute;
+	left:50px;
+	top:350px;
+	background: linear-gradient(to right, rgba(255,0,0,0), #EF787C);
+	width:200px;
+	font-size:30px;
+	height:90px;
+	border-radius:20px;
+	opacity:0.9;
+	}
+}
+  
+</style>
+<body style="background-image:url('./Images/dancing.jpg');background-repeat:no-repeat;background-size:cover;">
+<header>
+<div class="modal_bg"></div>
+	<nav class="cd-stretchy-nav">
+		<a class="cd-nav-trigger" href="#0">
+			<span aria-hidden="true"></span>
+		</a>
+
+		
+		<ul>
+			<li><a href="../home" ><span>Home</span></a></li>
+			<li><a href="worshop.html" ><span>Workshop</span></a></li>
+			<li><a href="events.html" class="active"><span>Events</span></a></li>
+			<li><a href="http://goforevent.com/jntua_pixel18/" target="_blank"><span>Register Here</span></a></li>
+			<li><a href="contact.html"><span>Contact</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+</header>
+ <button id="home" ><a href="../home">Home</a></button>
+  <div id="eventdiv">  
+    <div class="eventheader">
+      <button onclick="show(1)" id="1">
+        <img src="event icons/coding.png" /><br>Coding Blitz
+      </button>
+      <button onclick="show(2)" id="2">
+        <img src="event icons/bug-oh-mania.png" /><br>Bug-O-Mania
+      </button>
+      <button onclick="show(3)" id="3">
+        <img src="event icons/treasure hunt.png" /><br>Trace de Treasure
+      </button>
+      <button onclick="show(4)" id="4">
+        <img src="event icons/gaming.png" /><br>Gaming Terrain
+      </button>
+      <button onclick="show(5)" id="5">
+        <img src="event icons/natyakshetra.png" /><br>Natyakshetra
+      </button>
+      <button onclick="show(6)" id="6" class="">
+        <img src="event icons/photography.png" /><br>Candid Clickz
+      </button>
+      <button onclick="show(7)" id="7" class="">
+        <img src="event icons/ppt.png" /><br>Paper Presentation
+      </button>
+      <button onclick="show(8)" id="8" class="">
+        <img src="event icons/project expo.png" /><br>Project Expo
+      </button>
+      <button onclick="show(9)" id="9" class="">
+        <img src="event icons/shortfilm.png" /><br>Mini Cinemaa
+      </button>
+      <button onclick="show(10)" id="10" class="">
+        <img src="event icons/technical quiz.png" /><br>Quizophile
+      </button>
+    </div>
+  </div>
+  <iframe id="visi" src="natyak.html"; ></iframe>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <button onclick="show(1)" id="1" class="left-button hvr-bounce-in">
+          <img src="event icons/coding.png" /><br>Coding Blitz
+        </button>
+        <button onclick="show(2)" id="2" class="left-bottom hvr-grow">
+          <img src="event icons/bug-oh-mania.png" /><br>Bug-O-Mania
+        </button>
+        <button onclick="show(3)" id="3" class="left-bottom2 hvr-buzz">
+          <img src="event icons/treasure hunt.png" /><br>Trace de Treasure
+        </button>
+        <button onclick="show(4)" id="4" class="left-top hvr-bob">
+          <img src="event icons/gaming.png" /><br>Gaming Terrain
+        </button>
+        <button onclick="show(5)" id="5" class="left-top2 hvr-wobble-horizontal">
+          <img src="event icons/natyakshetra.png" /><br>Natyakshetra
+        </button>
+      </div>
+      <div class="col-md-6">
+        <button onclick="show(6)" id="6" class="right-button hvr-bounce-in">
+          <img src="event icons/photography.png" /><br>Candid Clickz
+        </button>
+        <button onclick="show(7)" id="7" class="right-bottom hvr-grow">
+          <img src="event icons/ppt.png" /><br>Paper Presentation
+        </button>
+        <button onclick="show(8)" id="8" class="right-bottom2 hvr-buzz">
+          <img src="event icons/project expo.png" /><br>Project Expo
+        </button>
+        <button onclick="show(9)" id="9" class="right-top hvr-bob">
+          <img src="event icons/shortfilm.png" /><br>Mini Cinemaa
+        </button>
+        <button onclick="show(10)" id="10" class="right-top2 hvr-wobble-horizontal">
+          <img src="event icons/technical quiz.png" /><br>Quizophile
+        </button>
+      </div>
+    </div></div>
+<button id="register2" ><a href="http://goforevent.com/jntua_pixel18/" style="color:white" target="_blank"> Register Here</a></button>    
+  
+<script src="js2/jquery-2.1.4.js"></script>
+<script src="js2/main.js"></script> <!-- Resource jQuery -->
+</body>

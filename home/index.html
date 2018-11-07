@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>PIXEL v11.0</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<meta name="description" content="PIXEL v11.0 a national level technical symphosium" />
+		<meta name="keywords" content="title, header, effect, scroll, inspiration, medium, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css2/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css2/style.css"> <!-- Resource style -->
+	<script src="js2/modernizr.js"></script> <!-- Modernizr -->
+	
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href="https://fonts.googleapis.com/css?family=Aclonica|Averia+Sans+Libre|Cabin+Sketch|Graduate|Montserrat" rel="stylesheet">
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<style>
+		#data
+		{
+		position:absolute;
+		z-index: 10;
+		color:white;
+		font-size:30px;
+		text-align:center;
+		top:23.5%;
+		left:27%;
+		line-height:1.2;
+		}
+		#register
+		{
+		position:absolute;
+		width:150px;
+		height:30px;
+		bottom:25%;
+		left:33%;
+		z-index:10;
+		background-color: transparent;
+		border-radius:200px;
+				
+		}
+		#register a{
+		 color:white;
+		font-family: 'Averia Sans Libre';
+		}
+		#about
+		{
+		position:absolute;
+		bottom:25%;
+		right:37%;
+		z-index:10;
+		width:150px;
+		height:30px;
+		background-color: transparent;
+		border-radius:200px;
+		color:white;
+		text-decoration: none;
+		
+		}
+		#about a{
+		color:white;
+		font-family: 'Averia Sans Libre';
+		}
+		.social
+		{
+		position:absolute;
+        bottom:20px;
+		left:40px;
+		}
+		.social a{
+		padding:5px;
+		}
+		#dont
+		{
+		font-size:120px;
+		font-family:'Cabin Sketch';
+		}
+		#version
+		{
+		font-family:'Cabin Sketch';
+		font-size:35px;
+		}
+		#v{
+		font-size:30px;
+		}
+   #date
+   {
+   		font-family:'Cabin Sketch';
+		font-size:22px;
+		color:white;
+   }
+		.modal_bg{
+			width:100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			display: none;
+			background-color: rgba(00,00,00,0.7);
+			z-index: 14;
+		}
+				.cd-stretchy-nav .stretchy-nav-bg {
+  /* this is the stretching navigation background */
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #213442;
+ /* background:red;*/
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: height 0.2s, box-shadow 0.2s;
+  -moz-transition: height 0.2s, box-shadow 0.2s;
+  transition: height 0.2s, box-shadow 0.2s;
+}
+		@media only screen and (max-width:980px)
+		{
+		#data
+		{
+		position:absolute;
+		z-index:10;
+		color:white;
+		font-size:20px;
+		text-align:center;
+		top:20%;
+		left:2%;
+		line-height:1.2;
+		}
+
+		.social
+		{
+		left:23%;
+		}
+		#dont{
+		font-size:70px;
+		font-family: "Cabin Sketch";
+		}
+		#about
+		{
+		left:31%;
+		bottom:30%;
+		z-index:10;
+		font-family: 'Averia Sans Libre';
+		}
+		#register
+		{
+		bottom:23%;
+		left:31%;
+		z-index:10;
+		font-family: 'Averia Sans Libre';
+		}
+		}
+		</style>
+	</head>
+	<body class="demo-6">
+	<header>
+		<div class="modal_bg"></div>
+	<nav class="cd-stretchy-nav">
+		<a class="cd-nav-trigger" href="#0">
+			<span aria-hidden="true"></span>
+		</a>
+
+		<ul>
+			<li><a href="../home" class="active"><span>Home</span></a></li>
+			<li><a href="worshop.html"><span>Workshop</span></a></li>
+			<li><a href="events.html"><span>Events</span></a></li>
+			<li><a href="http://goforevent.com/jntua_pixel18/" target="_blank"><span>Register Here</span></a></li>
+			<li><a href="contact.html"><span>Contact</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+</header>
+		<div id="container" style="width:100%"class="container intro-effect-grid">
+		<p id="data" style="font-family: Averia Sans Libre" >Department of Computer Science and Engineering<br/> JNTUA College Of Engineering Anantapuramu<br>
+Presents</p>
+       <button id="about"> <a  href="aboutus.html">About Us</a></button>
+		 <button id="register"><a href="http://goforevent.com/jntua_pixel18/login/" target="_blank">Your Dashboard</a></button>
+			<!--<header class="header">
+				<ul class="grid">
+					<li><h2>Lonely Rider</h2></li>
+					<li><h2>Daisy, do you remember?</h2></li>
+					<li><h2>How long do we have to wait</h2></li>
+					<li><h2>Little children</h2></li>
+					<li><h2>I will meet my creators</h2></li>
+					<li><h2>About happiness</h2></li>
+				</ul>-->
+					
+				<div class="bg-img">
+					<iframe src="background/index.html" height="100%" width="100%"></iframe>
+				</div>
+				<div class="title">
+					<!-- <nav class="codrops-demos">
+						<a href="index.html">Push</a>
+						<a href="index2.html">Fade Out</a>
+						<a href="index3.html">Sliced</a>
+						<a href="index4.html">Side</a>
+						<a href="index5.html">Fixed Side</a>
+						<a class="current-demo" href="index6.html">Grid</a>
+						<a href="index7.html">Jam 3</a>
+					</nav> -->
+				 <h1 id="dont" >PIXEL <sup><span id="version"><span id="v">v</span>11.0</span></sup></h1>
+				 <h6 id="date">Thank You For Making Pixel a Grand success</h6>
+					<!--<p class="subline">Inspiration for Article Intro Effects</p>
+					<p>by <strong>Henry James</strong> &#8212; Posted in <strong>Inspiration</strong> on <strong>May 21, 2014</strong></p>-->
+				</div>
+<div class="social">
+<a href="https://www.facebook.com/pixel2k18" target="_blank" ><img src="Images3/fb.png" height="40px" width="40px"/></a>&nbsp;
+<a href="https://instagram.com/pixel_jntuacea" target="_blank" ><img src="Images3/insta.png" height="40px" width="40px" /></a>&nbsp;
+<a href="mailto:pixel.jntua@gmail.com" target="_blank" ><img src="Images3/mail.png" height="40px" width="40px"/></a>&nbsp;
+<a href="https://twitter.com/pixel_jntuacea" target="_blank" ><img src="Images3/twt.png" height="40px" width="40px"/></a>
+</div>
+		</div><!-- /container -->
+
+		<script src="js/classie.js"></script>
+		<script>
+		function dont()
+		{
+		document.getElementById("dont").style.display="none";
+		}
+			(function() {
+
+				// detect if IE : from http://stackoverflow.com/a/16657946		
+				var ie = (function(){
+					var undef,rv = -1; // Return value assumes failure.
+					var ua = window.navigator.userAgent;
+					var msie = ua.indexOf('MSIE ');
+					var trident = ua.indexOf('Trident/');
+
+					if (msie > 0) {
+						// IE 10 or older => return version number
+						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+					} else if (trident > 0) {
+						// IE 11 (or newer) => return version number
+						var rvNum = ua.indexOf('rv:');
+						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+					}
+
+					return ((rv > -1) ? rv : undef);
+				}());
+
+
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
+				// left: 37, up: 38, right: 39, down: 40,
+				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+				function preventDefault(e) {
+					e = e || window.event;
+					if (e.preventDefault)
+					e.preventDefault();
+					e.returnValue = false;  
+				}
+
+				function keydown(e) {
+					for (var i = keys.length; i--;) {
+						if (e.keyCode === keys[i]) {
+							preventDefault(e);
+							return;
+						}
+					}
+				}
+
+				function touchmove(e) {
+					preventDefault(e);
+				}
+
+				function wheel(e) {
+					// for IE 
+					//if( ie ) {
+						//preventDefault(e);
+					//}
+				}
+
+				function disable_scroll() {
+					window.onmousewheel = document.onmousewheel = wheel;
+					document.onkeydown = keydown;
+					document.body.ontouchmove = touchmove;
+				}
+
+				function enable_scroll() {
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+				}
+
+				var docElem = window.document.documentElement,
+					scrollVal,
+					isRevealed, 
+					noscroll, 
+					isAnimating,
+					container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function scrollY() {
+					return window.pageYOffset || docElem.scrollTop;
+				}
+				
+				function scrollPage() {
+					scrollVal = scrollY();
+					
+					if( noscroll && !ie ) {
+						if( scrollVal < 0 ) return false;
+						// keep it that way
+						window.scrollTo( 0, 0 );
+					}
+
+					if( classie.has( container, 'notrans' ) ) {
+						classie.remove( container, 'notrans' );
+						return false;
+					}
+
+					if( isAnimating ) {
+						return false;
+					}
+					
+					if( scrollVal <= 0 && isRevealed ) {
+						toggle(0);
+					}
+					else if( scrollVal > 0 && !isRevealed ){
+						toggle(1);
+					}
+				}
+
+				function toggle( reveal ) {
+					isAnimating = true;
+					
+					if( reveal ) {
+						classie.add( container, 'modify' );
+					}
+					else {
+						noscroll = true;
+						disable_scroll();
+						classie.remove( container, 'modify' );
+					}
+
+					// simulating the end of the transition:
+					setTimeout( function() {
+						isRevealed = !isRevealed;
+						isAnimating = false;
+						if( reveal ) {
+							noscroll = false;
+							enable_scroll();
+						}
+					}, 1000 );
+				}
+
+				// refreshing the page...
+				var pageScroll = scrollY();
+				noscroll = pageScroll === 0;
+				
+				disable_scroll();
+				
+				if( pageScroll ) {
+					isRevealed = true;
+					classie.add( container, 'notrans' );
+					classie.add( container, 'modify' );
+				}
+				
+				window.addEventListener( 'scroll', scrollPage );
+				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); console.log('tyui');});
+			})();
+		</script>
+		
+	
+<script src="js2/jquery-2.1.4.js"></script>
+<script src="js2/main.js"></script> <!-- Resource jQuery -->
+	</body>
+</html>
